@@ -1,0 +1,14 @@
+.dashboardContainer{
+    margin-bottom: 5rem;
+text-align: center;
+}
+
+.welcomeMsg{
+    text-align: center;
+}
+
+.cardWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

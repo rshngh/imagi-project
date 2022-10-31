@@ -1,0 +1,15 @@
+.unsplashImagesContainer {
+   /* display: flex; */
+   width: 50rem;
+   justify-content: center;
+}
+
+
+.imgBox{
+
+}
+
+.unsplashImagesContainer img{
+    width: 50%;
+}
+

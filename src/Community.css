@@ -1,0 +1,177 @@
+
+
+
+
+.creatorsWrapper{
+  display: flex;
+}
+
+.creatorsWrapper h2{
+  margin: auto;
+  color: black;
+  font-weight: 600;
+}
+
+.creatorsTitle{
+width: 30%;
+margin: auto;
+color: gray;
+text-align: center;
+}
+
+.creatorsWrapper img{
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+}
+
+
+.communityContainer{
+
+}
+.carouselContainer{
+  width: 50%;
+}
+
+
+
+.maskImg h1{
+  font-size: 12rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.maskImg img{
+  width: 200px;
+  height: 200px;
+}
+
+
+.maskText{
+  /* font-size: 66px;
+  line-height: 80px;
+  font-weight: 800; */
+  text-transform: uppercase;
+  background: url(../src/assets/poweredbyou.jpg) 0 0 / cover no-repeat;
+  color: #de466c;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: auto;
+  -webkit-mask-size: 100%;
+  mask-size: 100%;
+}
+
+.maskImg{
+  -webkit-mask-image: url(../src/assets/img1.jpg);
+  mask-image: url(../src/assets/img1.jpg);
+
+ 
+}
+
+.poweredbyouYouContainer p{
+  color: gray;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+.maskLinear{
+  -webkit-mask-image: linear-gradient(black, transparent);
+  mask-image: linear-gradient(black, transparent);
+}
+
+.collageContainer{
+display: grid;
+grid-template-columns: repeat(30,0fr);
+justify-content: center;
+}
+
+.collageContainer img{
+  width: 50px;
+  height: 50px;
+}
+
+.poweringCreators{
+  background-color:whitesmoke;
+  color: #2c343e ;
+}
+
+.poweringCreators img{
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+  float: right;
+}
+
+
+.poweredbyouYouContainer{
+  margin: 4rem auto;
+  text-align: center;
+}
+
+.ptImages{
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-evenly;
+  margin: 4rem auto;
+}
+
+.ptImages img{
+
+}
+
+.rightImg{
+  float: right;
+  width: 30%;
+}
+
+.leftImg{
+  float: left;
+  width: 30%;
+}
+
+.logo{
+ width: 100px;
+ height: auto;
+}
+
+.logoContainer{
+  width: 40%;
+  text-align: center;
+  color: gray;
+  margin: auto;
+  padding: 10px;
+}
+
+.logoContainer p{
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px ) {
+  .creatorsTitle{
+    display: contents;
+    }
+
+    .creatorsWrapper {
+   flex-direction: column;
+   padding: 10px;
+   margin-top: 10px;
+    }
+
+    .creatorsWrapper  img{
+     width: 100%;
+    }
+
+    
+.maskImg h1{
+  font-size: 7rem;
+  font-weight: 900;
+}
+
+
+
+.logo{
+  width: 70px;
+  height: auto;
+ }
+}

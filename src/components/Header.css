@@ -1,0 +1,170 @@
+
+
+.headerContainer{
+    font-family:sans-serif;
+    width: 100% !important;
+    height: 100%;
+    margin: 0px !important;
+    padding: 0px !important;
+    border-bottom: 2px solid rgb(165, 165, 165);
+    position: sticky;
+top: 0;
+background-color: white;
+z-index: 1;
+overflow: scroll;
+}
+
+
+.navbar{
+justify-content: space-evenly;
+flex-wrap: nowrap;
+}
+
+.form-inline{
+    margin: 0 1rem;
+}
+
+
+ .btn{
+margin: 0 4px;
+}
+
+
+.headerContainer a{
+    color: gray;
+    font-family:sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.headerContainer a:hover{
+    color: black;
+}
+
+.imagiLogo img{
+    height: 50px;
+    width: 44px;
+    padding: 0px;
+    /* margin: 2px; */
+    margin-left: 10px;
+    /* padding: 4px; */
+    background: transparent;
+}
+
+.divider{
+    background-color: lightgray;
+    width: 1px;
+    height: 32px;
+    margin: auto 1rem;
+}
+
+.inputBoxContainer{
+    padding: 0px;
+    margin: 0px;
+    width: 30% !important;
+}
+
+.d-flex{
+    flex-grow: 0.5;
+}
+
+.login_signup{
+margin: 1rem;
+}
+
+
+
+/* .login_signup h3{
+    padding: 5px;
+    margin: 0;
+    font-size: medium;
+    color: darkgray;
+} */
+
+
+
+
+.navbar-collapse{
+    flex-grow: 0 !important;
+}
+
+
+.nav-link{
+    font-size: 1rem !important;
+}
+
+.nav-item{
+    min-width: 6rem;
+    margin: 0 5px;
+    text-align: center;
+}
+
+.navbar-fullWidth{
+    /* display: inline-flex; */
+    white-space: nowrap;
+}
+
+.navbar-smallWidth{
+    display: none;
+}
+
+@media only screen and (max-width: 991px){
+.navbar-fullWidth{
+    display: none;
+}
+
+.form-inline{
+    display: block !important;
+    margin: 0 1rem;
+}
+
+.navbar-nav{
+margin: 1rem;
+}
+
+.navbar-smallWidth{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-item{
+    min-width: 6rem;
+    text-align: center;
+}
+
+}
+
+
+@media only screen and (max-width: 1080px){
+    
+    .headerContainer{
+        overflow: hidden;
+        width: 100%;
+        margin: 0;
+    }
+
+    .headerItems{
+        display: none;
+    }
+
+    .divider{
+        display: none;
+    }
+
+    .imagiLogo img{
+        /* height: 50px;
+        width: 50px;
+        padding: 0; */
+        /* margin-left: 10px; */
+    }
+
+    .inputBoxContainer{
+        width: 60%;
+        padding: 0px;
+        margin: 0px;
+    }
+
+
+}

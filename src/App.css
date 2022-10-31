@@ -1,0 +1,33 @@
+/* .App {
+    background-image: linear-gradient(
+  35deg,
+  hsl(261deg 100% 50%) 0%,
+  hsl(261deg 98% 49%) 4%,
+  hsl(261deg 96% 48%) 9%,
+  hsl(261deg 94% 47%) 13%,
+  hsl(261deg 92% 47%) 17%,
+  hsl(261deg 90% 46%) 22%,
+  hsl(260deg 88% 45%) 26%,
+  hsl(261deg 86% 44%) 30%,
+  hsl(261deg 85% 44%) 35%,
+  hsl(261deg 85% 45%) 39%,
+  hsl(261deg 86% 46%) 43%,
+  hsl(261deg 86% 47%) 48%,
+  hsl(261deg 86% 49%) 52%,
+  hsl(261deg 87% 50%) 57%,
+  hsl(261deg 87% 51%) 61%,
+  hsl(261deg 88% 52%) 65%,
+  hsl(261deg 87% 53%) 70%,
+  hsl(261deg 84% 53%) 74%,
+  hsl(261deg 82% 53%) 78%,
+  hsl(261deg 81% 53%) 83%,
+  hsl(261deg 79% 54%) 87%,
+  hsl(261deg 77% 54%) 91%,
+  hsl(261deg 75% 54%) 96%,
+  hsl(261deg 73% 54%) 100%
+);
+} */
+
+li:hover{
+cursor: pointer;
+}

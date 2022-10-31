@@ -1,0 +1,240 @@
+/* body{
+    background-color:#00ADB5;
+    justify-content:space-between;
+    color: white;
+    font-family:sans-serif; 
+    flex-direction: row;
+} */
+
+.suggestionsWrapper{
+    display: flex;
+    /* margin-top: 10px; */
+    margin: 1rem auto;
+    padding: 1rem;
+    /* width: 100%; */
+    justify-content: center;
+    width: 100%;
+}
+
+.suggestionsWrapper ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.suggestionsWrapper span{
+    margin-right: 10px;
+}
+
+.suggestionsListWrapper{
+
+    overflow-x: scroll;
+}
+.searchSuggestions{
+   /* margin: auto; */
+   /* padding: 20px; */
+   /* text-decoration: underline; */
+   flex-direction: row;
+   justify-content: center;
+}
+.onhover :hover{
+cursor: pointer;
+
+}
+
+
+
+.searchSuggestions li{
+    padding: 0px 5px ;
+    color: white;
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.519);
+    border-radius: 5px;
+   display: inline-flex;
+   margin-right: 10px;
+   align-items: center;
+
+}
+
+.searchSuggestions img{
+height: 14px;
+}
+
+.searchContainer{
+    text-align: center;
+    display: flex;
+    padding: 20px;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3) ), url(../assets/bg.jpg);
+    background-size: cover;
+    color: white;
+    font-family: sans-serif; 
+    padding-top: 4rem;  
+    height: 548px;
+    justify-content: center;
+    background-position: center;
+}
+
+.fooSearchContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    align-content: center;
+}
+
+.fooSearchContainer .logo{
+    display: none;
+}
+
+.fooSearchContainer h1{
+    margin-bottom: 0;
+    font-weight: 600;
+  
+    
+}
+
+.fooSearchContainer p{
+    margin-bottom: 2rem;
+    
+}
+
+/* .searchBox{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    margin: auto;
+    padding: 5px;
+    border-radius: 10px;
+} */
+
+
+/* h1{
+    display: flex;
+    justify-content: center;
+} */
+/* .searchBox img{
+    background-color: white;
+    height: 30px;
+    padding: 5px;
+    margin: auto 1%;
+} */
+
+/* .searchBox input{
+    border: none;
+    height: 2.5rem;
+    width: 30rem;
+    margin: auto 1%;
+    /* width: 40%; */
+ */
+
+
+.searchIconWhite{
+    height: 1rem;
+    margin: 5px;
+}
+
+
+
+.searchSuggestions a{
+    color: white;
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.519);
+    border-radius: 5px;
+   padding-right: 5px ;
+   display: flex;
+}
+
+.searchSuggestions span{
+    color: lightgray;
+
+}
+
+@media only screen and (max-width: 1080px){
+
+
+    /* 594-310-230  */
+
+    /* .searchBox{
+        width: 60%;
+    }
+
+    .searchBox input{
+        width: 100%;
+        
+    } */
+
+    /* .searchContainer .logo{
+        display: flex;
+        margin: auto;
+        padding-top: 50px;
+        text-decoration: none;
+        } */
+
+      /* #brandName{
+        padding: 5px;
+        color: white;
+        margin: auto;
+      } */
+
+      .fooSearchContainer h1{
+        line-height: 1.2;
+      }
+
+      /* .searchSuggestions span{
+        margin-top: 4px;
+      } */
+
+      /* .searchSuggestions{
+        width: 100%;
+      }
+       */
+      ::-webkit-scrollbar{
+        display: none;
+      }
+
+      /* .searchSuggestions li{
+        padding: 4px;
+        margin-left: 2px;
+        width: 6rem;
+        
+      } */
+
+} 
+
+@media only screen and (max-width: 460px){
+
+    .searchSuggestions span{
+        display: none;
+    }
+}
+
+
+/*  linear-gradient(
+  35deg,
+  hsl(261deg 100% 50%) 0%,
+  hsl(261deg 98% 49%) 4%,
+  hsl(261deg 96% 48%) 9%,
+  hsl(261deg 94% 47%) 13%,
+  hsl(261deg 92% 47%) 17%,
+  hsl(261deg 90% 46%) 22%,
+  hsl(260deg 88% 45%) 26%,
+  hsl(261deg 86% 44%) 30%,
+  hsl(261deg 85% 44%) 35%,
+  hsl(261deg 85% 45%) 39%,
+  hsl(261deg 86% 46%) 43%,
+  hsl(261deg 86% 47%) 48%,
+  hsl(261deg 86% 49%) 52%,
+  hsl(261deg 87% 50%) 57%,
+  hsl(261deg 87% 51%) 61%,
+  hsl(261deg 88% 52%) 65%,
+  hsl(261deg 87% 53%) 70%,
+  hsl(261deg 84% 53%) 74%,
+  hsl(261deg 82% 53%) 78%,
+  hsl(261deg 81% 53%) 83%,
+  hsl(261deg 79% 54%) 87%,
+  hsl(261deg 77% 54%) 91%,
+  hsl(261deg 75% 54%) 96%,
+  hsl(261deg 73% 54%) 100%
+); */

@@ -1,0 +1,26 @@
+.colorAlbumContainerMain{
+   
+}
+
+
+.colorList li{
+    width: 100px;
+    height: 120px;
+    padding: 0px;
+}
+
+.colorAlbumWrapper img{
+border-radius: 100%;
+height: 100px;
+width: 100px;
+padding: 5px;
+background-color: whitesmoke;
+border-radius: 100%;
+object-fit: cover;
+}
+
+.colorAlbumWrapper ul{
+    list-style: none;
+      display: flex;
+      padding: 0;
+  }
