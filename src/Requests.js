@@ -48,13 +48,10 @@ fetchImages()
 const NextButton=()=>{
   setPage(page+1)
   setImages(null)
-  // document.getElementById('requestContainer')?.scrollIntoView({ behavior: 'smooth' });
+  document.getElementById('suggestionContainer')?.scrollIntoView({ behavior: 'smooth' });
 }
 
-if(!images) 
-return 
-document.getElementById('requestContainer')?.scrollIntoView({ behavior: 'smooth' });
-<h5 style={{textAlign:"center", color:"gray", fontWeight:"600"}}>loading...</h5>
+if(!images) return <h5 style={{textAlign:"center", color:"gray", fontWeight:"600"}}>loading...</h5>
 
 
 

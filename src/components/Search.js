@@ -34,7 +34,7 @@ console.log("clicked on",item)
 
 <InputBox />
 
-<div className='suggestionsWrapper' >
+<div id='suggestionContainer' className='suggestionsWrapper' >
     <span>trending: </span>
 <ul className='suggestionsListWrapper'>
     {
