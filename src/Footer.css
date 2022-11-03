@@ -62,6 +62,10 @@
     height: auto;
 }
 
+.socialMedia img:hover{
+    cursor: default;
+}
+
 .socialMedia li{
     padding: 0;
 }

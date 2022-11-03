@@ -106,7 +106,8 @@ const Results = (props) => {
       document.getElementById('resultsContainer')?.scrollIntoView({ behavior: 'smooth' });
   }
 
-  if(!images || !searchTerm) return <h5 style={{textAlign:"center", color:"gray", fontWeight:"600"}}>loading...</h5>
+  
+  if(!images) return <h5 style={{textAlign:"center", color:"gray", fontWeight:"600"}}>loading...</h5>
      
   if(!images || !searchTerm)  document.getElementById('resultsContainer')?.scrollIntoView({ behavior: 'smooth' });
 

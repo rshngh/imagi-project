@@ -54,8 +54,8 @@ setTimeout(() => {
   </button>
   <div class="dropdown-menu">
     <a class="dropdown-item" onClick={()=>downloadImage("raw")} href="#">Raw</a>
-    <a class="dropdown-item" onClick={()=>downloadImage("regular")} href="#">Regular</a>
     <a class="dropdown-item" onClick={()=>downloadImage("full")} href="#">Full</a>
+    <a class="dropdown-item" onClick={()=>downloadImage("regular")} href="#">Regular</a>
   </div>
 </div>
 {
