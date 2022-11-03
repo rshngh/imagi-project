@@ -10,15 +10,18 @@ import { useNavigate } from 'react-router-dom'
 import close from '../src/assets/close.png'
 import Album from './components/Album';
 import loadingIcon from '../src/assets/loadingIcon.gif'
+import DownloadOptions from './components/DownloadOptions';
 
 const Results = (props) => {
   const[images, setImages] = useState([])
   const[imageQuery, setImageQuery] = useState()
-  const[loading, setLoading] = useState(false)
-  const query = new URLSearchParams(window.location.search);
   const [data, setData] = useState({})
   const[model, setModel]= useState(false)
-  const[albumArray, setAlbumArray]=useState([])
+  const[searchQuery,setSearchQuery]=useState("el")
+  const query = new URLSearchParams(window.location.search);
+
+  
+
   const latest = [
     "diwali",
     "ukraine",
@@ -52,8 +55,6 @@ const Results = (props) => {
     navigate(`/results/?query=${item}`)
     console.log("clicked", item)
   }
-
- 
 
 
   let searchTerm = query.get("query");
@@ -110,38 +111,42 @@ const Results = (props) => {
   if(!images || !searchTerm)  document.getElementById('resultsContainer')?.scrollIntoView({ behavior: 'smooth' });
 
 
-
-//   useEffect(()=>{
-//     const query = new URLSearchParams(window.location.search);
-
-//     let searchTerm = query.get("query");
-
-//     let x = FetchImages(searchTerm,15)
-//     x.then(function(result){return setImage(result)})
-//     console.log("showing results image", image)
-// },[])
-
-
-// useEffect(()=>{
-//   const query = new URLSearchParams(window.location.search);
-
-//   let searchTerm = query.get("query");
-
-//   let x = FetchCollectionTitle(searchTerm, 2)
-//   x.then(function(result){return setAlbumArray(result)})
-//   console.log("showing results image", albumArray)
-// },[])
-
     
 return (
     <div id="resultsContainer" className='resultsContainer'>
+
+{/* modal start */}
+
+{/* <!-- Button trigger modal --> */}
+{/* <img  class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter" /> */}
+
+{/* <!-- Modal --> */}
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">{searchTerm}</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      <img className='' alt='' src={data.regular} />
+      </div>
+      <div class="modal-footer">
+          <DownloadOptions imgurls={data}  />
+      </div>
+    </div>
+  </div>
+</div>
+
+{/* modal end */}
 
 <h2 style={{fontSize:"1.5rem"}} className='heading'>Popular Topics</h2>
 
 <div style={{marginBottom:"2rem"}} className='exploreWrapper photographyTopicsContainer'>
 {
   latest.map(item=>{
-    console.log("item", item)
     return(
       <div onClick={()=>requestData(item)} className='photographyTopicsWrapper'>
        <span className='photographyTopics'>{item}</span> 
@@ -152,33 +157,11 @@ return (
 </div>
 
 
-{/* album */}
-
-{/* <h2 className='heading'>Popular Collections</h2>
-   <div className='exploreWrapper'>
-
-
-{
-  albumArray.map(i=>i.preview_photos.map(p=>{
-    return(
-      <div onClick={()=>requestData(p)} className='exploreAlbumContainer'>
-      <Album albumName={p}/>
-      {p.alt_description}
-
-    </div>)
-
-
-    }
-    )
-)}
+{/* <div className={ model ? "model open" : "model"}>
+<img className='imgContainer' alt='' src={data.regular} />
+<img className='iconContainer' alt='' src={close} onClick={()=>{setModel(false)}} />
 </div> */}
 
-{/* album end */}
-
-<div className={ model ? "model open" : "model"}>
-<img className='imgContainer' alt='' src={data} />
-<img className='iconContainer' alt='' src={close} onClick={()=>{setModel(false)}} />
-</div>
 
 
 <div className='successContainer'>
@@ -197,7 +180,8 @@ return (
           src={i.urls.thumb} 
           alt={i.alt_description} 
           style={{display:"block"}}
-          onClick={()=>viewImage(i.urls.regular)}  
+          onClick={()=>viewImage(i.urls)}  
+          data-toggle="modal" data-target="#exampleModalCenter"
           />
          )
      })
