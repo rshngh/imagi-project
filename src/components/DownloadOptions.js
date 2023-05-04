@@ -39,7 +39,6 @@ setTimeout(() => {
     // saveAs(props.imgurls, 'image.jpg')
 }
 
-
   return (
     <div className='dowloadOptionsContainer'>
 

@@ -52,12 +52,9 @@ const Footer = () => {
      const getData=(p)=>{
         navigate(`/results/?query=${p}`)
         document.getElementById('resultsContainer')?.scrollIntoView({ behavior: 'smooth' })
-      document.getElementById("resultsContainer").scroll(0,0)
+    //   document.getElementById("resultsContainer").scroll(0,0)
 
      }
-
-     
-     
 
   return (
     <div>

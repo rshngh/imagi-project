@@ -102,7 +102,7 @@ const Results = (props) => {
   const NextButton=()=>{
     setPage(page+1)
     setImages(null)
-      document.getElementById("resultsContainer").scroll(0,0)
+      // document.getElementById("resultsContainer").scroll(0,0)
       document.getElementById('resultsContainer')?.scrollIntoView({ behavior: 'smooth' });
   }
 

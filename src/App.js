@@ -10,6 +10,7 @@ import Blogs from './Blogs'
 import Results from "./Results";
 import Footer from "./Footer";
 import Registration from "./Registration";
+import Register from "./Register";
 import Dashboard from "./Dashboard";
 
 
@@ -32,8 +33,10 @@ function App() {
     <Route path='/community' element={< Community />}></Route>
     <Route path='/blogs' element={< Blogs />}></Route>
     <Route path="/results" element={<Results />}></Route>
-   <Route path="/registration" element={<Registration />}></Route>
+    <Route path="/registration" element={<Registration />}></Route>
     <Route path="dashboard" element={<Dashboard />} ></Route>
+    <Route path="/register" element={< Register />}></Route>
+    
     </Routes>
     
     <Footer />
