@@ -32,10 +32,10 @@ function App() {
     <Route path='/explore' element={< Explore />}></Route>
     <Route path='/community' element={< Community />}></Route>
     <Route path='/blogs' element={< Blogs />}></Route>
-    <Route path="/results" element={<Results />}></Route>
-    <Route path="/registration" element={<Registration />}></Route>
-    <Route path="dashboard" element={<Dashboard />} ></Route>
+    <Route path="/results" element={< Results />}></Route>
     <Route path="/register" element={< Register />}></Route>
+    <Route path="/registration" element={< Registration />}></Route>
+    <Route path="dashboard" element={< Dashboard />} ></Route>
     
     </Routes>
     
