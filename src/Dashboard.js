@@ -5,6 +5,7 @@ import {useAuthState} from 'react-firebase-hooks/auth'
 import { useNavigate } from 'react-router-dom';
 import Collage from './components/Collage';
 import '../src/Dashboard.css'
+import ImageUpload from './components/ImageUpload';
 
 const Dashboard = () => {
     const[user,loading] = useAuthState(auth)
@@ -33,6 +34,8 @@ const Dashboard = () => {
     <div className='welcomeMsg'>
     
     </div>
+
+    <ImageUpload />
     
     </div>
   
