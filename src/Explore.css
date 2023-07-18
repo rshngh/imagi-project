@@ -21,6 +21,11 @@
     font-size: 14px
 }
 
+.photographyTopics:hover{
+color: whitesmoke;
+background-color: #343a40;
+}
+
 .photographyTopicsContainer{
     gap: 0 !important;
 }

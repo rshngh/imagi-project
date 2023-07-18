@@ -4,7 +4,6 @@ import forCreators from '../src/assets/forCreators.jpg'
 import bythecreators3 from '../src/assets/bythecreators3.jpg'
 import { FetchCollections } from './APICALLS'
 import Collage from './components/Collage'
-import bythecreators2 from './assets/bythecreators2.jpg'
 import poweredbyou from './assets/poweredbyou.jpg'
 import photographersLeftImg from '../src/assets/photographersLeftImg.png'
 import photographersRightImg from '../src/assets/photographersRightImg.png'
@@ -47,7 +46,7 @@ Creating websites for work, need images for your blog or working on a college pr
 </div>
 
 
-<div className='ptImages'>
+{/* <div className='ptImages'>
 <img className='leftImg' src={photographersLeftImg} />
 
 
@@ -62,7 +61,7 @@ Creating websites for work, need images for your blog or working on a college pr
 
 <img className='rightImg' src={photographersRightImg} />
 
-</div>
+</div> */}
 
 {/* <div className='poweredbyouYouContainer'>
 <h2> Powered by</h2>

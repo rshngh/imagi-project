@@ -40,6 +40,7 @@ const InputBox = () => {
       value={searchText}
       onChange={inputTextHandler}
       required
+      autoFocus
       />
       </form>
       <img className="searchIcons" alt="search" src={searchIcon}/>

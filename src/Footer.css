@@ -46,6 +46,10 @@
    font-size: 14px;
 }
 
+.listItems:hover{
+    color: black;
+}
+
 .socialMedia{
     display: flex;
     justify-content: flex-end;
@@ -63,7 +67,7 @@
 }
 
 .socialMedia img:hover{
-    cursor: default;
+    cursor: pointer;
 }
 
 .socialMedia li{

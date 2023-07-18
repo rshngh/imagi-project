@@ -87,7 +87,7 @@ const Explore = () => {
   ])
 
   const latest = [
-    "Diwali",
+    "Space",
     "Ukraine",
     "Russia",
     "World",
@@ -125,7 +125,7 @@ const Explore = () => {
   return (
     <div className='exploreContainer'>
 
-<Collage heading="Explore" caption="Exlpore images from the best creators around the world."/>
+<Collage heading="Explore" caption="Discover the world of photography with our collections."/>
 
 <div className='exploreWrapper'>
 {

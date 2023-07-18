@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './Header.css'
 import logoImagi from '../assets/logoImagi.png'
 import instagram from '../assets/instagram.png'
-import twitter from '../assets/twitter.png'
+import twitter from '../assets/twitter.png'  
 import { Link } from 'react-router-dom'
 import InputBox from './InputBox'
 import { useNavigate } from "react-router-dom";
@@ -42,7 +42,7 @@ useEffect(()=>{document.getElementById('searchContainer')?.scrollIntoView({ beha
 <nav class="navbar navbar-expand-lg navbar-light" >
 
 <div onClick={document.getElementById('searchContainer')?.scrollIntoView({ behavior: 'smooth' })}>
-  <Link to="/" class="navbar-brand imagiLogo maskedLogo" href="home"> <img src={logoImagi} alt="logo"></img> </Link>
+  <Link to="/" class="navbar-brand imagiLogo maskedLogo" href="home"> <img className='zoom' src={logoImagi} alt="logo"></img> </Link>
   </div>
 
   {/* <div className='divider'></div> */}
@@ -87,11 +87,11 @@ class="d-flex" role="search">
           style={ location.pathname === "/about" ? activeStyle : {}}
           class="nav-link"  href="/about">About</a>
         </li>
-        <li class="nav-item">
+        {/* <li class="nav-item">
           <a 
            style={ location.pathname === "/community" ? activeStyle : {}}
           class="nav-link" href="/community">Community</a>
-        </li>
+        </li> */}
       </ul>
       </div>
 
@@ -141,11 +141,11 @@ class="d-flex" role="search">
           style={ location.pathname === "/about" ? activeStyle : {}}
           class="nav-link"  href="/about">About</a>
         </li>
-        <li class="nav-item">
+        {/* <li class="nav-item">
           <a 
            style={ location.pathname === "/community" ? activeStyle : {}}
           class="nav-link" href="/community">Community</a>
-        </li>
+        </li> */}
       </ul>
  
 

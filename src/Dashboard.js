@@ -19,7 +19,7 @@ const Dashboard = () => {
     <div className='dashboardContainer'> 
     <Collage heading="" caption=""  />
 
-<div className='cardWrapper'>
+<div className='cardWrapper userProfile'>
     <div class="card" style={{width:" 18rem", alignItems:"center"}}>
   <img src={user.photoURL} class="card-img-top" style={{  marginTop:"1rem", width:"100px", height:"100px", borderRadius:"100%"}} alt="avatar" />
   <div class="card-body">
@@ -31,7 +31,7 @@ const Dashboard = () => {
 </div>
     </div>
     <div className='welcomeMsg'>
-    
+    <p style={{lineHeight:"3rem"}}>more features coming soon...</p>
     </div>
     
     </div>

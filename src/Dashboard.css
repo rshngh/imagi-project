@@ -12,3 +12,7 @@ text-align: center;
     align-items: center;
     justify-content: center;
 }
+
+.userProfile:hover{
+    cursor: pointer;
+}

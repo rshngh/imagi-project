@@ -8,7 +8,7 @@ import { useNavigate } from 'react-router-dom';
 
 const Search = () => {
   const[trending, setTrending]=useState([
-    "diwali",
+    "space",
     "technology",
     "peace",
     "nature",

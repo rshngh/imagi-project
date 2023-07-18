@@ -23,7 +23,7 @@ const Results = (props) => {
   
 
   const latest = [
-    "diwali",
+    "space",
     "ukraine",
     "russia",
     "world",

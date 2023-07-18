@@ -4,6 +4,10 @@ import { useNavigate } from 'react-router-dom'
 import facebook from '../src/assets/facebook.png'
 import twitter from '../src/assets/twitter.png'
 import instagram from '../src/assets/instagram.png'
+import logoImagi from '../src/assets/logoImagi.png'
+import { Link } from 'react-router-dom'
+
+
 
 const Footer = () => {
 
@@ -13,7 +17,6 @@ const Footer = () => {
     const pages = [
         "Explore", 
         "About", 
-        "Community"
     ]
 
     const popular = [
@@ -38,7 +41,7 @@ const Footer = () => {
      ]
 
      const latestTopics = [
-        "Diwali",
+        "Space",
         "Ukraine",
         "Russia", 
         "Military",
@@ -60,9 +63,13 @@ const Footer = () => {
     <div>
     <div className='footerContainer'>
         <div className='footerWrapper'>
-            <h5>Imagi</h5>
-            <p>Beautiful, free images gifted by the world’s most generous community of photographers. Better than any royalty free or stock photos.</p>
+
+            {/* <h5>Imagi</h5> */}
+  <p><Link to="/" class="navbar-brand imagiLogo maskedLogo" href="home"> <img className='zoom' src={logoImagi} alt="logo"></img> </Link>
+</p>
+            
             <ul className='listContainer'>
+            <span className='listItems' style={{fontSize:"0.9rem"}} onClick={()=>window.location.href="/"} > Home </span>
                 {pages.map(p=> <li onClick={()=>window.location.href="/" + p} className='listItems'> {p}</li>)}
             </ul>
         </div>
